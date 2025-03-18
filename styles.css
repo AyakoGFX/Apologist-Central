@@ -5,7 +5,7 @@ body {
     padding: 20px;
 }
 
-.page1 {
+.page1, .page2, .end {
     display: flex;
     max-width: 900px;
     margin: auto;
@@ -15,29 +15,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     gap: 20px;
 }
-
-.page2 {
-    display: flex;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    gap: 20px;
-}
-
-.end {
-    display: flex;
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    gap: 20px;
-}
-
 
 .column {
     flex: 1;
@@ -67,8 +44,18 @@ a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 a:hover {
     text-decoration: underline;
+    /* background-color: rgba(0, 123, 255, 0.1); /\* Light background on hover *\/ */
+    color: #0056b3; /* Darker blue for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .page1, .page2, .end {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
 }
