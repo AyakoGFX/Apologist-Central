@@ -5,7 +5,18 @@ body {
     padding: 20px;
 }
 
-.container {
+.page1 {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.page2 {
     display: flex;
     max-width: 900px;
     margin: auto;
